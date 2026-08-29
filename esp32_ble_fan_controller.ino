@@ -14,7 +14,7 @@
 // ---- Hardware config ----
 const int FAN_PWM_PIN   = 25;      
 const int PWM_FREQ_HZ   = 25000;  
-const int PWM_RESOLUTION = 8;      // 0-255 duty
+const int PWM_RESOLUTION = 8;      
 const int PWM_CHANNEL   = 0;
 
 // ---- Fan curve config (temperature in Celsius) ----
