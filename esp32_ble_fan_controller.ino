@@ -35,10 +35,10 @@ volatile bool deviceConnected = false;
 volatile float lastTempC = 0.0f;
 volatile unsigned long lastTempMillis = 0;
 
-float appliedTempC = -100.0f; // forces first update to apply
+float appliedTempC = -100.0f; 
 int currentDutyPct = DUTY_MIN_PCT;
 
-// ---------------------------------------------------------------------
+
 class ServerCallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer *server) override {
     deviceConnected = true;
