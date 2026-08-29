@@ -115,7 +115,7 @@ void setup() {
   Serial.println("BLE cooling pad controller ready, advertising as " DEVICE_NAME);
 }
 
-// ---------------------------------------------------------------------
+
 void loop() {
   unsigned long now = millis();
   bool dataFresh = (now - lastTempMillis) < DATA_TIMEOUT_MS;
