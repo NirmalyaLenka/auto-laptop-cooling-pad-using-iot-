@@ -133,7 +133,7 @@ void loop() {
       applyDutyPct(tempToDutyPct(t));
     }
   }
-
+  
   static unsigned long lastStatusMillis = 0;
   if (now - lastStatusMillis >= 1000) {
     lastStatusMillis = now;
