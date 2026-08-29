@@ -18,7 +18,7 @@ const int PWM_RESOLUTION = 8;
 const int PWM_CHANNEL   = 0;
 
 const float TEMP_MIN      = 48.0;  
-const float TEMP_MAX      = 78.0;  // at/above this: 100% duty (typical load ceiling)
+const float TEMP_MAX      = 78.0; 
 const int   DUTY_MIN_PCT  = 20;    // floor so fan doesn't stall
 const int   DUTY_MAX_PCT  = 100;
 const float HYSTERESIS_C  = 2.0;   // ignore temp changes smaller than this
