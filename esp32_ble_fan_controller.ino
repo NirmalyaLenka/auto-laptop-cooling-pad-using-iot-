@@ -81,7 +81,7 @@ void publishStatus(uint8_t tempRounded, uint8_t dutyPct, uint8_t fresh) {
   pStatusChar->notify();
 }
 
-// ---------------------------------------------------------------------
+
 void setup() {
   Serial.begin(115200);
 
