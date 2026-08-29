@@ -45,7 +45,7 @@ class ServerCallbacks : public BLEServerCallbacks {
   }
   void onDisconnect(BLEServer *server) override {
     deviceConnected = false;
-    BLEDevice::startAdvertising(); // resume advertising after disconnect
+    BLEDevice::startAdvertising(); 
   }
 };
 
