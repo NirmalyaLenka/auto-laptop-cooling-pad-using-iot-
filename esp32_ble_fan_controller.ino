@@ -17,8 +17,6 @@ const int PWM_FREQ_HZ   = 25000;
 const int PWM_RESOLUTION = 8;      
 const int PWM_CHANNEL   = 0;
 
-
-// Tuned for a laptop that idles around 40-50C: idle stays near the
 // duty floor instead of already sitting mid-ramp.
 const float TEMP_MIN      = 48.0;  // at/below this: minimum duty (covers idle)
 const float TEMP_MAX      = 78.0;  // at/above this: 100% duty (typical load ceiling)
