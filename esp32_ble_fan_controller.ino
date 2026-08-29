@@ -60,7 +60,6 @@ class TempCharCallbacks : public BLECharacteristicCallbacks {
   }
 };
 
-// ---------------------------------------------------------------------
 int tempToDutyPct(float tempC) {
   if (tempC <= TEMP_MIN) return DUTY_MIN_PCT;
   if (tempC >= TEMP_MAX) return DUTY_MAX_PCT;
