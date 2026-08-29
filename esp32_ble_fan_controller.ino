@@ -121,7 +121,7 @@ void loop() {
   bool dataFresh = (now - lastTempMillis) < DATA_TIMEOUT_MS;
 
   if (lastTempMillis == 0) {
-    // never received a reading yet, hold at minimum duty
+   
     applyDutyPct(DUTY_MIN_PCT);
   } else if (!dataFresh) {
     // link lost or laptop stopped sending, fall back to safe fixed speed
