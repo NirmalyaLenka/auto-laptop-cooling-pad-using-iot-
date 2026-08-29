@@ -12,7 +12,7 @@
 #define DEVICE_NAME "CoolPad-ESP32"
 
 // ---- Hardware config ----
-const int FAN_PWM_PIN   = 25;      // MOSFET gate driver pin
+const int FAN_PWM_PIN   = 25;      
 const int PWM_FREQ_HZ   = 25000;   // 25kHz, above audible range, standard PC fan PWM freq
 const int PWM_RESOLUTION = 8;      // 0-255 duty
 const int PWM_CHANNEL   = 0;
