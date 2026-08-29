@@ -124,7 +124,7 @@ void loop() {
    
     applyDutyPct(DUTY_MIN_PCT);
   } else if (!dataFresh) {
-    // link lost or laptop stopped sending, fall back to safe fixed speed
+  
     applyDutyPct(FALLBACK_DUTY_PCT);
   } else {
     float t = lastTempC;
