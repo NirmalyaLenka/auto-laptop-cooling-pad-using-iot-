@@ -1,33 +1,4 @@
-/*
- * BLE Cooling Pad Fan Controller
- * Board: ESP32 (any dev board with built-in BLE)
- *
- * Function:
- *   Acts as a BLE GATT server. A host script running on a laptop
- *   (host/laptop_temp_ble_client.py) connects as a BLE central and
- *   writes the current CPU temperature to TEMP_CHAR_UUID every
- *   ~2 seconds. This firmware maps temperature to a PWM duty cycle
- *   for a MOSFET-switched 12V cooling pad fan, with hysteresis and
- *   a connection-loss safety fallback.
- *
- * Hardware:
- *   - ESP32 dev board
- *   - N-channel logic-level MOSFET (e.g. IRLZ44N) gate on FAN_PWM_PIN
- *     through a 220R gate resistor, 10k pulldown gate-to-source
- *   - Fan pad's 12V line switched through MOSFET drain, source to GND
- *   - Flyback diode (1N4007) across fan terminals, cathode to +12V
- *   - Fan/MOSFET ground and ESP32 GND tied together (common ground)
- *   - Fan powered from external 12V supply, NOT from ESP32 5V/3V3
- *
- * Protocol:
- *   TEMP_CHAR_UUID   (write, no response): 2 bytes, little-endian
- *                     int16 = temperature_C * 100
- *                     e.g. 47.5 C -> 4750 -> bytes [0xA6, 0x12]
- *   STATUS_CHAR_UUID (notify): 3 bytes
- *                     [0] = last received temp_C (rounded, uint8)
- *                     [1] = current fan duty percent (0-100, uint8)
- *                     [2] = link state (1 = fresh data, 0 = stale/fallback)
- */
+
 
 #include <BLEDevice.h>
 #include <BLEServer.h>
