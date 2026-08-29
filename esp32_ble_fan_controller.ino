@@ -5,7 +5,6 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 
-// ---- BLE UUIDs (randomly generated, keep consistent with host script) ----
 #define SERVICE_UUID       "6b1e6a10-6e1a-4a0c-9e21-6f1a9c8a10f0"
 #define TEMP_CHAR_UUID      "6b1e6a11-6e1a-4a0c-9e21-6f1a9c8a10f0"
 #define STATUS_CHAR_UUID     "6b1e6a12-6e1a-4a0c-9e21-6f1a9c8a10f0"
