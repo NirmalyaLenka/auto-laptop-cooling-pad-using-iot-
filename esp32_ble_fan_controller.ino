@@ -17,7 +17,7 @@ const int PWM_FREQ_HZ   = 25000;
 const int PWM_RESOLUTION = 8;      
 const int PWM_CHANNEL   = 0;
 
-// ---- Fan curve config (temperature in Celsius) ----
+
 // Tuned for a laptop that idles around 40-50C: idle stays near the
 // duty floor instead of already sitting mid-ramp.
 const float TEMP_MIN      = 48.0;  // at/below this: minimum duty (covers idle)
