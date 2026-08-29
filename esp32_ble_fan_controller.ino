@@ -21,7 +21,7 @@ const float TEMP_MIN      = 48.0;
 const float TEMP_MAX      = 78.0; 
 const int   DUTY_MIN_PCT  = 20;    
 const int   DUTY_MAX_PCT  = 100;
-const float HYSTERESIS_C  = 2.0;   // ignore temp changes smaller than this
+const float HYSTERESIS_C  = 2.0;  
 
 // ---- Safety fallback ----
 const unsigned long DATA_TIMEOUT_MS = 15000; // no update in this window -> fallback
