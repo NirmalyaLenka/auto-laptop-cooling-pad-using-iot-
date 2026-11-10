@@ -119,6 +119,22 @@ temperature fluctuations.
 
 ---
 
+## Skills & technologies
+
+`Arduino/C++` · `Python`
+
+
+## Repository structure
+
+Key files and folders (not exhaustive):
+
+- `BLE_Cooling_Pad_Process_Overview.docx`
+- `README.md`
+- `esp32_ble_fan_controller.ino`
+- `laptop_temp_ble_client.py`
+- `requirements (3).txt`
+
+
 ## Maintenance & Audit
 
 - **Audit date:** 10 November 2026
